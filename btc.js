@@ -48,7 +48,7 @@ rest.get('http://www.landofbitcoin.com/index/update?r=' + Date.now(), {headers: 
   		}
   	}
   	else {
-  	process.stdout.write('\x08'.repeat(resultstr.length));
+  	process.stdout.write('\x08'.repeat(resultstr.length * 2));
   	resultstr = 'Running ¦ ' + result.balance + ' gathered so far ¦ ' + (interval - seconds) + ' secs to payout ¦ ' + getDateTime();
   	if (seconds >= interval) {
   		seconds = 0;
